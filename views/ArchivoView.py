@@ -20,7 +20,8 @@ class ArchivoView:
  
     def option1():
         addANewRouteController = AddANewRouteController()
-        isANewRoute = addANewRouteController.invoke()
+        route= "C:/Users/herme/Desktop/Proyecto_python_1/competencia.txt"
+        isANewRoute = addANewRouteController.invoke(route)
         if(isANewRoute):
             print('Se cargo la ruta exitosamente')
             globales.showRuta()

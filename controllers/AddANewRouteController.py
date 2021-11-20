@@ -5,8 +5,7 @@ class AddANewRouteController:
         pass
 
     @classmethod
-    def invoke(self):
-        route= input("Ingrese la nueva ruta ")
+    def invoke(self,route):
         addANewRouteService = AddANewRouteService()
         response = addANewRouteService.invoke(route)
         return response
