@@ -1,6 +1,6 @@
 ruta_archivo = ""
 
-def show_ruta_archivo():
+def showRuta():
 	global ruta_archivo
 	print(ruta_archivo)
 

@@ -1,5 +1,4 @@
 from views.index import IndexView;
-
 def main():
     print ("Hello, world!")
 

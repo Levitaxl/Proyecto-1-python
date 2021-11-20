@@ -1,4 +1,5 @@
 from controllers.AddANewRouteController import AddANewRouteController
+import globales
 
 class ArchivoView:
 
@@ -19,7 +20,12 @@ class ArchivoView:
  
     def option1():
         addANewRouteController = AddANewRouteController()
-        addANewRouteController.__invoke__()
+        isANewRoute = addANewRouteController.invoke()
+        if(isANewRoute):
+            print('Se cargo la ruta exitosamente')
+            globales.showRuta()
+        else:
+            print('Ha ocurrido un problema al crear la ruta')
 
     @classmethod    
     def showMenu(self):
