@@ -1,4 +1,5 @@
 import views.ArchivoView
+import views.UsuariosView
 import os
 
 class IndexView:
@@ -27,7 +28,10 @@ class IndexView:
 
  
     def option2():
-        print('Handle option \'Acciones\'')
+        clear = lambda: os.system('cls')
+        clear()
+        usuariosView = views.UsuariosView.UsuariosView
+        usuariosView.showMenu()
 
 
     @classmethod    
