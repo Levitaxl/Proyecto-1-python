@@ -1,5 +1,6 @@
 from controllers.AddANewRouteController import AddANewRouteController
-import globales
+import views.index
+import os
 
 class ArchivoView:
 
@@ -24,9 +25,14 @@ class ArchivoView:
         isANewRoute = addANewRouteController.invoke(route)
         if(isANewRoute):
             print('Se cargo la ruta exitosamente')
-            globales.showRuta()
         else:
             print('Ha ocurrido un problema al crear la ruta')
+
+    def option2():
+        clear = lambda: os.system('cls')
+        clear()
+        index = views.index.IndexView
+        index.showMenu()
 
     @classmethod    
     def showMenu(self):
@@ -41,7 +47,6 @@ class ArchivoView:
             if option == 1:
                self.option1()
             elif option == 2:
-                print('Thanks message before exiting')
-                exit()
+                self.option2()
             else:
                 print('Invalid option. Please enter a number between 1 and 4.')

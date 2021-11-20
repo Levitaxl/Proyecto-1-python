@@ -1,6 +1,6 @@
-from views.ArchivoView import ArchivoView
+import views.ArchivoView
 import os
-import globales
+
 class IndexView:
 
     menu_options= {
@@ -22,7 +22,7 @@ class IndexView:
     def option1():
         clear = lambda: os.system('cls')
         clear()
-        archivoView = ArchivoView()
+        archivoView = views.ArchivoView.ArchivoView
         archivoView.showMenu()
 
  
