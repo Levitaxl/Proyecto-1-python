@@ -1,3 +1,6 @@
+
+import views.GetAllUsersView
+import views.CountAllUsersView
 import views.index
 import os
 
@@ -27,9 +30,18 @@ class UsuariosView:
 
  
     def option1():
-        print("Paso algo")
-
+        clear = lambda: os.system('cls')
+        clear()
+        getAllUsersView = views.GetAllUsersView.GetAllUsersView
+        getAllUsersView.showMenu()
+    
     def option2():
+        clear = lambda: os.system('cls')
+        clear()
+        countAllUsersView = views.CountAllUsersView.CountAllUsersView
+        countAllUsersView.showMenu()
+
+    def option0():
         clear = lambda: os.system('cls')
         clear()
         index = views.index.IndexView
@@ -48,7 +60,7 @@ class UsuariosView:
             if option == 1:
                self.option1()
             elif option == 2:
-                self.option1()
+                self.option2()
             elif option == 3:
                 self.option1()
             elif option == 4:
@@ -64,6 +76,6 @@ class UsuariosView:
             elif option == 9:
                 self.option1()
             elif option == 0:
-                self.option2()
+                self.option0()
             else:
                 print('Invalid option. Please enter a number between 1 and 4.')
