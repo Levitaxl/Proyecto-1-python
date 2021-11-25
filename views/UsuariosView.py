@@ -1,13 +1,13 @@
 
-import views.GetAllUsersView
-import views.CountAllUsersView
-import views.CountAllUsersByAgeGroupView
-import views.CountAllUsersByGenderView
-import views.GetWinnerByAgeView
-import views.GetWinnerByGenderView
-import views.GetWinnerByAgeControllerAndGenderView
-import views.GetWinnerView
-import views.HistogramView
+from views.GetAllUsersView import GetAllUsersView
+from views.CountAllUsersView import CountAllUsersView
+from  views.CountAllUsersByAgeGroupView import CountAllUsersByAgeGroupView
+from views.CountAllUsersByGenderView  import CountAllUsersByGenderView
+from  views.GetWinnerByAgeView import GetWinnerByAgeView
+from  views.GetWinnerByGenderView import GetWinnerByGenderView
+from views.GetWinnerByAgeControllerAndGenderView import GetWinnerByAgeControllerAndGenderView
+from  views.GetWinnerView import GetWinnerView
+from  views.HistogramView import HistogramView
 import views.index
 import os
 
@@ -39,53 +39,44 @@ class UsuariosView:
     def option1():
         clear = lambda: os.system('cls')
         clear()
-        getAllUsersView = views.GetAllUsersView.GetAllUsersView
-        getAllUsersView.showMenu()
+        GetAllUsersView.showMenu()
     
     def option2():
         clear = lambda: os.system('cls')
         clear()
-        countAllUsersView = views.CountAllUsersView.CountAllUsersView
-        countAllUsersView.showMenu()
+        CountAllUsersView.showMenu()
     
     def option3():
         clear = lambda: os.system('cls')
         clear()
-        countAllUsersView = views.CountAllUsersByAgeGroupView.CountAllUsersByAgeGroupView
-        countAllUsersView.showMenu()
+        CountAllUsersByAgeGroupView.showMenu()
 
     def option4():
         clear = lambda: os.system('cls')
         clear()
-        countAllUsersView = views.CountAllUsersByGenderView.CountAllUsersByGenderView
-        countAllUsersView.showMenu()
+        CountAllUsersByGenderView.showMenu()
 
     def option5():
         clear = lambda: os.system('cls')
         clear()
-        countAllUsersView = views.GetWinnerByAgeView.GetWinnerByAgeView
-        countAllUsersView.showMenu()
+        GetWinnerByAgeView.showMenu()
     
     def option6():
         clear = lambda: os.system('cls')
         clear()
-        countAllUsersView = views.GetWinnerByGenderView.GetWinnerByGenderView
-        countAllUsersView.showMenu()
+        GetWinnerByGenderView.showMenu()
     def option7():
         clear = lambda: os.system('cls')
         clear()
-        countAllUsersView = views.GetWinnerByAgeControllerAndGenderView.GetWinnerByAgeControllerAndGenderView
-        countAllUsersView.showMenu()
+        GetWinnerByAgeControllerAndGenderView.showMenu()
     def option8():
         clear = lambda: os.system('cls')
         clear()
-        countAllUsersView = views.GetWinnerView.GetWinnerView
-        countAllUsersView.showMenu()
+        GetWinnerView.showMenu()
     def option9():
         clear = lambda: os.system('cls')
         clear()
-        countAllUsersView = views.HistogramView.HistogramView
-        countAllUsersView.showMenu()
+        HistogramView.showMenu()
 
     def option0():
         clear = lambda: os.system('cls')
