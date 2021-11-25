@@ -48,8 +48,8 @@ class GetWinnerByGenderService:
         }
         i=0
         for user in users:
-            gender= user["sexo"]
-            if(gender =='M'):
+            age=int(user["edad"])
+            if(age>25 and  age<40):
                  if((int(winner['hours']) >= int(user['horas'])) and (int(winner['minutes']) >= int(user['minutos'])) and (int(winner['seconds']) >= int(user['segundos']))):
                     winner={
                         'hours' :    user['horas'],
