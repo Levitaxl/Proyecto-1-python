@@ -9,5 +9,9 @@ class GetAllUsersModel:
 
     @classmethod
     def invoke(self):
-            usuarios = globales.getUsers()
-            return usuarios[0]
+        try:
+         usuarios = globales.getUsers()
+         return usuarios[0]
+        except:
+            print("Recuerde cargar el archivo")
+            return None
