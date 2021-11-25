@@ -8,9 +8,9 @@ class GetWinnerByAgeView:
     def showMenu(self):
 
         countAllUsersController = GetWinnerByAgeController()
-        quantity= str(countAllUsersController.invoke())
+        winners= countAllUsersController.invoke()
 
-        print("El ganador jr es "+quantity)
+        print(winners)
 
 
         input('Apriete enter para salir: ')

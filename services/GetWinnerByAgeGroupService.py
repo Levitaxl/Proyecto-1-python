@@ -12,12 +12,12 @@ class GetWinnerByAgeGroupService:
         idWinnerJr      =   self.winnerJunior(self,users) 
         idWinnerSenior  =   self.winnerSenior(self,users) 
         idWinnerMaster  =   self.winnerMaster(self,users) 
-
-        print(users[idWinnerJr])
-        print(users[idWinnerSenior])
-        print(users[idWinnerMaster])
-
-        return (idWinnerJr)
+        winners = {
+            'winnerJr'      : users[idWinnerJr],
+            'winnerSenior'  :users[idWinnerSenior],
+            'winnerMaster'  : users[idWinnerMaster]
+        }
+        return (winners)
 
     def winnerJunior(self,users):
         idWinner=-1
