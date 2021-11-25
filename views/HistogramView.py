@@ -19,7 +19,7 @@ class HistogramView:
         for k in range(quantity['qtyMasters']):
             master=master+'*'
 
-        print("Juniors ("+str(quantity['qtyJuniors'])+") "+juniors   )
+        print("Juniors ("+str(quantity['qtyJuniors'])+") "+juniors )
         print("Seniors ("+str(quantity['qtySeniors'])+") "+senior)
         print(" Master  "+str(quantity['qtyMasters'])+") "+master)
 

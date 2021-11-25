@@ -1,4 +1,4 @@
-from models.CountAllUsersByAgeGroupModel import CountAllUsersByAgeGroupModel
+from models.UsersModel import UsersModel
 
 
 class CountAllUsersByAgeGroupService:
@@ -7,8 +7,7 @@ class CountAllUsersByAgeGroupService:
 
     @classmethod
     def invoke(self):
-        countAllUsersByAgeGroupModel = CountAllUsersByAgeGroupModel()
-        users =  countAllUsersByAgeGroupModel.invoke()
+        users =  UsersModel.invoke()
         qtyJuniors =0
         qtySeniors =0
         qtyMasters =0

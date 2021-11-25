@@ -1,6 +1,5 @@
 
-import globales
-from models.GetAllUsersModel import GetAllUsersModel
+from models.UsersModel import UsersModel
 
 
 class GetAllUsersService:
@@ -9,6 +8,5 @@ class GetAllUsersService:
 
     @classmethod
     def invoke(self):
-        getAllUsersModel = GetAllUsersModel()
-        users = getAllUsersModel.invoke()
+        users = UsersModel.invoke()
         return (users)

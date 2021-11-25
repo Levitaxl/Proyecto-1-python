@@ -1,4 +1,4 @@
-from models.CountAllUsersModel import CountAllUsersModel
+from models.UsersModel import UsersModel
 
 
 class CountAllUsersService:
@@ -7,6 +7,5 @@ class CountAllUsersService:
 
     @classmethod
     def invoke(self):
-        countAllUsersModel = CountAllUsersModel()
-        quantity = countAllUsersModel.invoke()
+        quantity = UsersModel.invoke()
         return (quantity)
