@@ -15,7 +15,6 @@ class CountAllUsersByAgeGroupService:
         
       
         for user in users:
-            print(user)
             age=int(user["edad"])
             if(age<= 25):
                 qtyJuniors=qtyJuniors+1
