@@ -8,4 +8,4 @@ class CountAllUsersService:
     @classmethod
     def invoke(self):
         quantity = UsersModel.invoke()
-        return (quantity)
+        return len(quantity)

@@ -6,12 +6,12 @@ class CountAllUsersByGenderView:
 
     @classmethod    
     def showMenu(self):
+        quantity= CountAllUsersByGenderController.invoke()
 
-        countAllUsersController = CountAllUsersByGenderController()
-        quantity= countAllUsersController.invoke()
+        females ="|Females "+str(quantity['qtyF'])+"|"
+        males   ="|Males "+str(quantity['qtyM'])+"|"
         
-        print("Hay en el sistema F "+str(quantity['qtyF']))
-        print("Hay en el sistema M "+str(quantity['qtyM']))
+        print(females+" "+males)
 
 
         input('Apriete enter para salir: ')

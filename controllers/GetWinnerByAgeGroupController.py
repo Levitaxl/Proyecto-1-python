@@ -1,6 +1,6 @@
 from services.GetWinnerByAgeGroupService import GetWinnerByAgeGroupService
 
-class GetWinnerByAgeController:
+class GetWinnerByAgeGroupController:
     def __init__(self):
         pass
 

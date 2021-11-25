@@ -3,7 +3,7 @@ from views.GetAllUsersView import GetAllUsersView
 from views.CountAllUsersView import CountAllUsersView
 from  views.CountAllUsersByAgeGroupView import CountAllUsersByAgeGroupView
 from views.CountAllUsersByGenderView  import CountAllUsersByGenderView
-from  views.GetWinnerByAgeView import GetWinnerByAgeView
+from  views.GetWinnerByAgeGroupView import GetWinnerByAgeGroupView
 from  views.GetWinnerByGenderView import GetWinnerByGenderView
 from views.GetWinnerByAgeControllerAndGenderView import GetWinnerByAgeControllerAndGenderView
 from  views.GetWinnerView import GetWinnerView
@@ -59,7 +59,7 @@ class UsuariosView:
     def option5():
         clear = lambda: os.system('cls')
         clear()
-        GetWinnerByAgeView.showMenu()
+        GetWinnerByAgeGroupView.showMenu()
     
     def option6():
         clear = lambda: os.system('cls')

@@ -6,14 +6,12 @@ class CountAllUsersByAgeGroupView:
 
     @classmethod    
     def showMenu(self):
+        usersQuantity= CountAllUsersByAgeGroupController.invoke()
 
-        countAllUsersController = CountAllUsersByAgeGroupController()
-        quantity= countAllUsersController.invoke()
-        print(quantity)
-
-        print("Hay en el sistema Juniors "+str(quantity['qtyJuniors']))
-        print("Hay en el sistema Seniors "+str(quantity['qtySeniors']))
-        print("Hay en el sistema Master  "+str(quantity['qtyMasters']))
+        juniors="|Juniors:"+str(usersQuantity['qtyJuniors'])+"|"
+        seniors="|Seniors:"+str(usersQuantity['qtySeniors'])+"|"
+        masters="|Masters:"+str(usersQuantity['qtyMasters'])+"|"
+        print(juniors+" "+seniors+" "+masters)
 
 
         input('Apriete enter para salir: ')
