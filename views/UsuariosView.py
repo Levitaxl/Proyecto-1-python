@@ -4,6 +4,7 @@ import views.CountAllUsersView
 import views.CountAllUsersByAgeGroupView
 import views.CountAllUsersByGenderView
 import views.GetWinnerByAgeView
+import views.GetWinnerByGenderView
 import views.index
 import os
 
@@ -61,6 +62,12 @@ class UsuariosView:
         clear()
         countAllUsersView = views.GetWinnerByAgeView.GetWinnerByAgeView
         countAllUsersView.showMenu()
+    
+    def option6():
+        clear = lambda: os.system('cls')
+        clear()
+        countAllUsersView = views.GetWinnerByGenderView.GetWinnerByGenderView
+        countAllUsersView.showMenu()
 
     def option0():
         clear = lambda: os.system('cls')
@@ -89,7 +96,7 @@ class UsuariosView:
             elif option == 5:
                 self.option5()
             elif option == 6:
-                self.option1()
+                self.option6()
             elif option == 7:
                 self.option1()
             elif option == 8:
