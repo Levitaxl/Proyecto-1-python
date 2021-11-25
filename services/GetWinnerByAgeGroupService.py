@@ -9,31 +9,73 @@ class GetWinnerByAgeGroupService:
     def invoke(self):
         usersModel = UsersModel()
         users =  usersModel.invoke()
-        idWinnerJr =self.calculate(self,users) 
+        idWinnerJr      =   self.winnerJunior(self,users) 
+        idWinnerSenior  =   self.winnerSenior(self,users) 
+        idWinnerMaster  =   self.winnerMaster(self,users) 
+
         print(users[idWinnerJr])
-        print(idWinnerJr)
+        print(users[idWinnerSenior])
+        print(users[idWinnerMaster])
+
         return (idWinnerJr)
 
-    def calculate(self,users):
+    def winnerJunior(self,users):
         idWinner=-1
         winner={
-            'hours' :    0,
-            'minutes' :  0,
-            'seconds':   0,
+            'hours' :    9999999,
+            'minutes' :  9999999,
+            'seconds':   9999999,
             'idWinner' : -1
         }
         i=0
         for user in users:
             age=int(user["edad"])
             if(age<= 25):
-                if(idWinner==-1):
+                if((int(winner['hours']) >= int(user['horas'])) and (int(winner['minutes']) >= int(user['minutos'])) and (int(winner['seconds']) >= int(user['segundos']))):
                     winner={
-                        'hours' :    int(user['horas']),
-                        'minutes' :  int(user['minutos']),
-                        'seconds':   int(user['segundos']),
+                        'hours' :    user['horas'],
+                        'minutes' :  user['minutos'],
+                        'seconds':   user['segundos'],
                         'idWinner' : i
                     }
-                elif((winner['hours']<- int(user['horas'])) and (winner['minutes']<- int(user['minutos'])) and (winner['seconds']<-int(user['segundos']))):
+            i=i+1
+        return winner['idWinner']
+    
+    def winnerSenior(self,users):
+        idWinner=-1
+        winner={
+            'hours' :    9999999,
+            'minutes' :  9999999,
+            'seconds':   9999999,
+            'idWinner' : -1
+        }
+        i=0
+        for user in users:
+            age=int(user["edad"])
+            if(age>25 and  age<40):
+                 if((int(winner['hours']) >= int(user['horas'])) and (int(winner['minutes']) >= int(user['minutos'])) and (int(winner['seconds']) >= int(user['segundos']))):
+                    winner={
+                        'hours' :    user['horas'],
+                        'minutes' :  user['minutos'],
+                        'seconds':   user['segundos'],
+                        'idWinner' : i
+                    }
+            i=i+1
+        return winner['idWinner']
+
+    def winnerMaster(self,users):
+        idWinner=-1
+        winner={
+            'hours' :    9999999,
+            'minutes' :  9999999,
+            'seconds':   9999999,
+            'idWinner' : -1
+        }
+        i=0
+        for user in users:
+            age=int(user["edad"])
+            if(age>=40):
+                if((int(winner['hours']) >= int(user['horas'])) and (int(winner['minutes']) >= int(user['minutos'])) and (int(winner['seconds']) >= int(user['segundos']))):
                     winner={
                         'hours' :    user['horas'],
                         'minutes' :  user['minutos'],
