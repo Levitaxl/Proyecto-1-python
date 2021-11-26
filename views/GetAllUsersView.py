@@ -9,7 +9,11 @@ class GetAllUsersView:
     def showMenu(self):
         
         users= GetAllUsersController.invoke()
+        if(users==False):
+            print('Remember to upload the file')
+            return
 
+             
         header=['CI','P.Apellido','S.Apellido','Nombre',' Inicial S.Nombre','Sexo','Edad','Horas','Minutos','Segundos']
      
         print("{: >15} {: >15} {: >15} {: >15} {: >15} {: >15} {: >15} {: >15} {: >15} {: >15}".format(*header))

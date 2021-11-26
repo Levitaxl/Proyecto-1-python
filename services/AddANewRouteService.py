@@ -14,7 +14,9 @@ class AddANewRouteService:
         response= fileObj.is_file()
         if(response):
             globales.setRuta(fileName)
-            loadFileModel= LoadFileModel()
-            list=loadFileModel.invoke(fileName)
-            globales.appendUser(list) 
+            list=LoadFileModel.invoke(fileName)
+            if(list):
+                globales.appendUser(list) 
+            else :
+                response = False
         return (response)

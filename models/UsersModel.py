@@ -6,5 +6,10 @@ class UsersModel:
 
     @classmethod
     def invoke(self):
+
+        try:
             usuarios = globales.getUsers()
-            return usuarios[0]
+            response = usuarios[0]
+        except:
+            response=False
+            return response
