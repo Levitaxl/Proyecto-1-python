@@ -7,8 +7,9 @@ class GetWinnerService:
 
     @classmethod
     def invoke(self):
-        usersModel = UsersModel()
-        users =  usersModel.invoke()
+        users =  UsersModel.invoke()
+        if (users==False):
+            return False
         idWinner      =   self.winner(self,users) 
 
         winner = users[idWinner],

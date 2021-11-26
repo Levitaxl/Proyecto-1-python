@@ -7,8 +7,11 @@ class GetWinnerByGenderService:
 
     @classmethod
     def invoke(self):
-        usersModel = UsersModel()
-        users =  usersModel.invoke()
+        users =  UsersModel.invoke()
+        
+        if(users==False):
+            return False
+        
         idWinnerF      =   self.winnerF(self,users) 
         idWinnerM  =       self.winnerM(self,users) 
 

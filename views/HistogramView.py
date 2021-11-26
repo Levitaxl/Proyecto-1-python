@@ -7,6 +7,11 @@ class HistogramView:
     @classmethod    
     def showMenu(self):
         quantity= CountAllUsersByAgeGroupController.invoke()
+        
+        if(quantity==False):
+            print('Remember to upload the file')
+            return
+            
         juniors=''
         senior=''
         master=''

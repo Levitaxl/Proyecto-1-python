@@ -56,23 +56,18 @@ class UsuariosView:
     def option5():
         GetWinnerByAgeGroupView.showMenu()
         
-    
     def option6():
         GetWinnerByGenderView.showMenu()
         
-
     def option7():
         GetWinnerByAgeControllerAndGenderView.showMenu()
         
-
     def option8():
         GetWinnerView.showMenu()
-        
 
     def option9():
         HistogramView.showMenu()
         
-
     def option0():
         index = views.index.IndexView
         index.showMenu()

@@ -1,5 +1,4 @@
 from controllers.GetWinnerByAgeGroupController import GetWinnerByAgeGroupController
-import os
 
 class GetWinnerByAgeGroupView:
     def __init__(self):

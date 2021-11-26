@@ -7,6 +7,11 @@ class GetWinnerView:
     @classmethod    
     def showMenu(self):
         winner= GetWinnerController.invoke()
+        
+        if(winner==False):
+            print('Remember to upload the file')
+            return
+
         self.printWinner(self,winner,'Winner')
 
         input('Press enter on the keyboard to exit: ')

@@ -8,7 +8,9 @@ class GetWinnerByGenderView:
     def showMenu(self):
 
         winners= GetWinnerByGenderController.invoke()
-
+        if(winners==False):
+            print('Remember to upload the file')
+            return
         
         self.printWinner(self,winners['winnerF'],'Female Winner')
         self.printWinner(self,winners['winnerM'],'Male Winner')
