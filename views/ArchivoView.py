@@ -29,8 +29,7 @@ class ArchivoView:
             print('Ha ocurrido un problema al crear la ruta')
 
     def option2():
-        clear = lambda: os.system('cls')
-        clear()
+        
         index = views.index.IndexView
         index.showMenu()
 

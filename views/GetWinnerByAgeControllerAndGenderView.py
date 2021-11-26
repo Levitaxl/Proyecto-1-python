@@ -13,7 +13,7 @@ class GetWinnerByAgeControllerAndGenderView:
         self.printWinner(self,winners['winnerF'],'Female Winner')
         self.printWinner(self,winners['winnerM'],'Male Winner')
 
-        input('Apriete enter para salir: ')
+        input('Press enter on the keyboard to exit: ')
         
     def printWinner(self,winner,header):
         print('---------------------------------------------')

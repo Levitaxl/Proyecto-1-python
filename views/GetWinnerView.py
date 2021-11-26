@@ -9,7 +9,8 @@ class GetWinnerView:
         winner= GetWinnerController.invoke()
         self.printWinner(self,winner,'Winner')
 
-        input('Apriete enter para salir: ')
+        input('Press enter on the keyboard to exit: ')
+
 
     def printWinner(self,winner,header):
         print('---------------------------------------------')

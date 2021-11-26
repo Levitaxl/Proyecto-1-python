@@ -11,7 +11,9 @@ class CountAllUsersByAgeGroupView:
         juniors="|Juniors:"+str(usersQuantity['qtyJuniors'])+"|"
         seniors="|Seniors:"+str(usersQuantity['qtySeniors'])+"|"
         masters="|Masters:"+str(usersQuantity['qtyMasters'])+"|"
+        print(" ")
         print(juniors+" "+seniors+" "+masters)
+        print(" ")
 
 
-        input('Apriete enter para salir: ')
+        input('Press enter on the keyboard to exit: ')

@@ -8,8 +8,7 @@ class GetWinnerByAgeGroupView:
     @classmethod    
     def showMenu(self):
 
-        clear = lambda: os.system('cls')
-        clear()
+        
 
         winners= GetWinnerByAgeGroupController.invoke()
 
@@ -17,11 +16,7 @@ class GetWinnerByAgeGroupView:
         self.printWinner(self,winners['winnerSenior'],'Winner Senior')
         self.printWinner(self,winners['winnerMaster'],'Winner Master')
 
-        winners=None
-
-        input('Apriete enter para salir: ')
-        clear = lambda: os.system('cls')
-        clear()
+        input('Press enter on the keyboard to exit: ')
 
     def printWinner(self,winner,header):
         print('---------------------------------------------')

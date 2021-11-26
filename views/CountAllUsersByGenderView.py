@@ -11,7 +11,8 @@ class CountAllUsersByGenderView:
         females ="|Females "+str(quantity['qtyF'])+"|"
         males   ="|Males "+str(quantity['qtyM'])+"|"
         
+        print(" ")
         print(females+" "+males)
+        print(" ")
 
-
-        input('Apriete enter para salir: ')
+        input('Press enter on the keyboard to exit: ')

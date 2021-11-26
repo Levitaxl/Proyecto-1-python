@@ -21,5 +21,4 @@ class HistogramView:
         print("Seniors ("+str(quantity['qtySeniors'])+") "+senior)
         print("Master  ("+str(quantity['qtyMasters'])+") "+master)
 
-
-        input('Apriete enter para salir: ')
+        input('Press enter on the keyboard to exit: ')

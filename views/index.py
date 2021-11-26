@@ -21,21 +21,14 @@ class IndexView:
 
  
     def option1():
-        clear = lambda: os.system('cls')
-        clear()
         archivoView = views.ArchivoView.ArchivoView
         archivoView.showMenu()
-        clear = lambda: os.system('cls')
-        clear()
+        
  
     def option2():
-        clear = lambda: os.system('cls')
-        clear()
         usuariosView = views.UsuariosView.UsuariosView
         usuariosView.showMenu()
-        clear = lambda: os.system('cls')
-        clear()
-
+        
 
     @classmethod    
     def showMenu(self):

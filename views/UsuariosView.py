@@ -10,6 +10,7 @@ from  views.GetWinnerView import GetWinnerView
 from  views.HistogramView import HistogramView
 import views.index
 import os
+import platform
 
 class UsuariosView:
 
@@ -32,76 +33,50 @@ class UsuariosView:
        
     @classmethod
     def print_menu(self):
+        print("")
+        print('----------------------')
         for key in self.menu_options.keys():
             print (key, '--', self.menu_options[key] )
 
+        print('----------------------')
+        print("")
  
     def option1():
-        clear = lambda: os.system('cls')
-        clear()
         GetAllUsersView.showMenu()
-        clear = lambda: os.system('cls')
-        clear()
     
     def option2():
-        clear = lambda: os.system('cls')
-        clear()
         CountAllUsersView.showMenu()
-        clear = lambda: os.system('cls')
-        clear()
+        
     
     def option3():
-        clear = lambda: os.system('cls')
-        clear()
         CountAllUsersByAgeGroupView.showMenu()
-        clear = lambda: os.system('cls')
-        clear()
+        
 
     def option4():
-        clear = lambda: os.system('cls')
-        clear()
         CountAllUsersByGenderView.showMenu()
-        clear = lambda: os.system('cls')
-        clear()
+        
 
     def option5():
-        clear = lambda: os.system('cls')
-        clear()
         GetWinnerByAgeGroupView.showMenu()
-        clear = lambda: os.system('cls')
-        clear()
+        
     
     def option6():
-        clear = lambda: os.system('cls')
-        clear()
         GetWinnerByGenderView.showMenu()
-        clear = lambda: os.system('cls')
-        clear()
+        
 
     def option7():
-        clear = lambda: os.system('cls')
-        clear()
         GetWinnerByAgeControllerAndGenderView.showMenu()
-        clear = lambda: os.system('cls')
-        clear()
+        
 
     def option8():
-        clear = lambda: os.system('cls')
-        clear()
         GetWinnerView.showMenu()
-        clear = lambda: os.system('cls')
-        clear()
+        
 
     def option9():
-        clear = lambda: os.system('cls')
-        clear()
         HistogramView.showMenu()
-        clear = lambda: os.system('cls')
-        clear()
+        
 
     def option0():
-        clear = lambda: os.system('cls')
-        clear()
         index = views.index.IndexView
         index.showMenu()
 
@@ -137,3 +112,9 @@ class UsuariosView:
                 self.option0()
             else:
                 print('Invalid option. Please enter a number between 1 and 4.')
+
+    def clear_console():
+        if platform.system()=='Windows':
+            os.system('cls')
+        else:
+            os.system('clear')

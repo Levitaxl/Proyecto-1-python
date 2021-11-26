@@ -1,4 +1,5 @@
 from controllers.GetAllUsersController import GetAllUsersController
+import views.UsuariosView
 import os
 class GetAllUsersView:
     def __init__(self):
@@ -17,9 +18,4 @@ class GetAllUsersView:
             userInfo= user.values()
             print("{: >15} {: >15} {: >15} {: >15} {: >15} {: >15} {: >15} {: >15} {: >15} {: >15}".format(*userInfo))
 
-
-        input('Apriete enter para salir: ')
-        clear = lambda: os.system('cls')
-        clear()
-
-        
+        input('Press enter on the keyboard to exit: ')

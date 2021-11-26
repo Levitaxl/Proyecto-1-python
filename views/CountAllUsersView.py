@@ -10,7 +10,8 @@ class CountAllUsersView:
         countAllUsersController = CountAllUsersController()
         quantity= str(countAllUsersController.invoke())
 
-        print("Hay en el sistema "+quantity)
+        print(" ")
+        print("There is in the system "+ quantity)
+        print(" ")
 
-
-        input('Apriete enter para salir: ')
+        input('Press enter on the keyboard to exit: ')
