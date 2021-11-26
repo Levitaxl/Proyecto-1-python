@@ -11,6 +11,7 @@ from  views.HistogramView import HistogramView
 import views.index
 import os
 import platform
+#Vista principal con todas las opciones de visualizacion en el sistema
 
 class UsuariosView:
 

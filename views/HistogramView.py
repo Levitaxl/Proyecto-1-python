@@ -1,5 +1,7 @@
 from controllers.CountAllUsersByAgeGroupController import CountAllUsersByAgeGroupController
 
+#Vista para obtener el histograma del sitema
+
 class HistogramView:
     def __init__(self):
        pass

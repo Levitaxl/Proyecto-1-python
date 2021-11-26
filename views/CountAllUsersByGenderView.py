@@ -1,4 +1,5 @@
 from controllers.CountAllUsersByGenderController import CountAllUsersByGenderController
+#Vista para saber la cantidad de usuarios por genero
 
 class CountAllUsersByGenderView:
     def __init__(self):

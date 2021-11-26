@@ -1,4 +1,5 @@
 from controllers.GetWinnerController import GetWinnerController
+#Vista para obtener al ganador
 
 class GetWinnerView:
     def __init__(self):

@@ -1,5 +1,6 @@
 from controllers.CountAllUsersController import CountAllUsersController
 
+#Vista para saber la cantidad de usuarios en el sistema
 class CountAllUsersView:
     def __init__(self):
        pass

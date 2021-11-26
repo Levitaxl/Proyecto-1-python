@@ -1,4 +1,5 @@
 from controllers.GetWinnerByGenderController import GetWinnerByGenderController
+#Vista para obtener a los ganadores por  genero
 
 class GetWinnerByGenderView:
     def __init__(self):

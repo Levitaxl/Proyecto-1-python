@@ -1,6 +1,6 @@
 from models.UsersModel import UsersModel
 
-
+#Servicio con la logica de negocio, que se encarga de obtener al ganador en el sistema.
 class GetWinnerService:
     def __init__(self):
         pass

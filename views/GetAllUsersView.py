@@ -1,6 +1,8 @@
 from controllers.GetAllUsersController import GetAllUsersController
-import views.UsuariosView
-import os
+
+#Vista para listar a todos los usuarios en el sistema
+
+
 class GetAllUsersView:
     def __init__(self):
        pass

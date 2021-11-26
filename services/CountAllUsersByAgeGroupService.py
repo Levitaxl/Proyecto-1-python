@@ -1,6 +1,6 @@
 from models.UsersModel import UsersModel
 
-
+#Servicio con la logica de negocio, que se encarga de contar y separar a los usuarios en el sistema por grupo etario.
 class CountAllUsersByAgeGroupService:
     def __init__(self):
         pass

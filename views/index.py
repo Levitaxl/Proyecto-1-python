@@ -1,6 +1,6 @@
 import views.ArchivoView
 import views.UsuariosView
-import os
+#Vista del menu principal del sistema, al entrar en el
 
 class IndexView:
 

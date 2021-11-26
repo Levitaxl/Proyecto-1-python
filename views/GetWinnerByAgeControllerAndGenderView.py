@@ -1,5 +1,8 @@
 from controllers.GetWinnerByAgeControllerAndGenderController import GetWinnerByAgeControllerAndGenderController
 
+#Vista para obtener a los ganadores por grupo etario y genero
+
+
 class GetWinnerByAgeControllerAndGenderView:
     def __init__(self):
        pass

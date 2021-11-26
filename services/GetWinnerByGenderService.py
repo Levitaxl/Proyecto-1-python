@@ -1,5 +1,6 @@
 from models.UsersModel import UsersModel
 
+#Servicio con la logica de negocio, que se encarga de contar y separar a los ganadores en el sistema por grupo genero.
 
 class GetWinnerByGenderService:
     def __init__(self):

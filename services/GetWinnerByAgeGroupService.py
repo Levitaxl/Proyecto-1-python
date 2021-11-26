@@ -1,6 +1,6 @@
 from models.UsersModel import UsersModel
 
-
+#Servicio con la logica de negocio, que se encarga de contar y separar a los ganadores en el sistema por grupo etario.
 class GetWinnerByAgeGroupService:
     def __init__(self):
         pass

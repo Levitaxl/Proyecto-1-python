@@ -1,4 +1,5 @@
 from controllers.CountAllUsersByAgeGroupController import CountAllUsersByAgeGroupController
+#Vista para saber la cantidad de usuarios por grupo etario
 
 class CountAllUsersByAgeGroupView:
     def __init__(self):
