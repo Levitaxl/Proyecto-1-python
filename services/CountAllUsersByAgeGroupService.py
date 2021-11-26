@@ -8,6 +8,8 @@ class CountAllUsersByAgeGroupService:
     @classmethod
     def invoke(self):
         users =  UsersModel.invoke()
+        if(users==False):
+            return users
         qtyJuniors =0
         qtySeniors =0
         qtyMasters =0

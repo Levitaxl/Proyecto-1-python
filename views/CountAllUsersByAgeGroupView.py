@@ -7,6 +7,9 @@ class CountAllUsersByAgeGroupView:
     @classmethod    
     def showMenu(self):
         usersQuantity= CountAllUsersByAgeGroupController.invoke()
+        if(usersQuantity==False):
+            print('Remember to upload the file')
+            return
 
         juniors="|Juniors:"+str(usersQuantity['qtyJuniors'])+"|"
         seniors="|Seniors:"+str(usersQuantity['qtySeniors'])+"|"

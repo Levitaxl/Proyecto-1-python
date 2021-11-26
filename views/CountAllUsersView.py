@@ -8,12 +8,13 @@ class CountAllUsersView:
     def showMenu(self):
 
 
-        quantity= str(CountAllUsersController.invoke())
+        quantity= CountAllUsersController.invoke()
 
         if(quantity==False):
             print('Remember to upload the file')
             return
         
+        quantity= str(CountAllUsersController.invoke())
 
         print(" ")
         print("There is in the system "+ quantity)
