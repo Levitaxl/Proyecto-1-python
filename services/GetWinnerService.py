@@ -13,7 +13,7 @@ class GetWinnerService:
 
         winner = users[idWinner],
         
-        return (winner)
+        return winner[0]
 
     def winner(self,users):
         winner={

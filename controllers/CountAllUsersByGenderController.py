@@ -6,6 +6,5 @@ class CountAllUsersByGenderController:
 
     @classmethod
     def invoke(self):
-        getAllUsersServiceByGender = CountAllUsersByGenderService()
-        quantity = getAllUsersServiceByGender.invoke()
+        quantity = CountAllUsersByGenderService.invoke()
         return quantity

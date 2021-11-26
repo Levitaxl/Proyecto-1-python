@@ -6,9 +6,7 @@ class HistogramView:
 
     @classmethod    
     def showMenu(self):
-
-        countAllUsersController = CountAllUsersByAgeGroupController()
-        quantity= countAllUsersController.invoke()
+        quantity= CountAllUsersByAgeGroupController.invoke()
         juniors=''
         senior=''
         master=''
@@ -21,7 +19,7 @@ class HistogramView:
 
         print("Juniors ("+str(quantity['qtyJuniors'])+") "+juniors )
         print("Seniors ("+str(quantity['qtySeniors'])+") "+senior)
-        print(" Master  "+str(quantity['qtyMasters'])+") "+master)
+        print("Master  ("+str(quantity['qtyMasters'])+") "+master)
 
 
         input('Apriete enter para salir: ')

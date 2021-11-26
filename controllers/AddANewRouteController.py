@@ -6,6 +6,5 @@ class AddANewRouteController:
 
     @classmethod
     def invoke(self,route):
-        addANewRouteService = AddANewRouteService()
-        response = addANewRouteService.invoke(route)
+        response = AddANewRouteService.invoke(route)
         return response

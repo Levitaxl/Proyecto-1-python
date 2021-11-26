@@ -40,43 +40,64 @@ class UsuariosView:
         clear = lambda: os.system('cls')
         clear()
         GetAllUsersView.showMenu()
+        clear = lambda: os.system('cls')
+        clear()
     
     def option2():
         clear = lambda: os.system('cls')
         clear()
         CountAllUsersView.showMenu()
+        clear = lambda: os.system('cls')
+        clear()
     
     def option3():
         clear = lambda: os.system('cls')
         clear()
         CountAllUsersByAgeGroupView.showMenu()
+        clear = lambda: os.system('cls')
+        clear()
 
     def option4():
         clear = lambda: os.system('cls')
         clear()
         CountAllUsersByGenderView.showMenu()
+        clear = lambda: os.system('cls')
+        clear()
 
     def option5():
         clear = lambda: os.system('cls')
         clear()
         GetWinnerByAgeGroupView.showMenu()
+        clear = lambda: os.system('cls')
+        clear()
     
     def option6():
         clear = lambda: os.system('cls')
         clear()
         GetWinnerByGenderView.showMenu()
+        clear = lambda: os.system('cls')
+        clear()
+
     def option7():
         clear = lambda: os.system('cls')
         clear()
         GetWinnerByAgeControllerAndGenderView.showMenu()
+        clear = lambda: os.system('cls')
+        clear()
+
     def option8():
         clear = lambda: os.system('cls')
         clear()
         GetWinnerView.showMenu()
+        clear = lambda: os.system('cls')
+        clear()
+
     def option9():
         clear = lambda: os.system('cls')
         clear()
         HistogramView.showMenu()
+        clear = lambda: os.system('cls')
+        clear()
 
     def option0():
         clear = lambda: os.system('cls')

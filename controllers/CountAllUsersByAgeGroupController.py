@@ -6,6 +6,5 @@ class CountAllUsersByAgeGroupController:
 
     @classmethod
     def invoke(self):
-        getAllUsersServiceByAgeGroup = CountAllUsersByAgeGroupService()
-        quantity = getAllUsersServiceByAgeGroup.invoke()
+        quantity = CountAllUsersByAgeGroupService.invoke()
         return quantity

@@ -6,6 +6,5 @@ class GetWinnerByAgeGroupController:
 
     @classmethod
     def invoke(self):
-        getAllUsersService = GetWinnerByAgeGroupService()
-        users = getAllUsersService.invoke()
+        users = GetWinnerByAgeGroupService.invoke()
         return users

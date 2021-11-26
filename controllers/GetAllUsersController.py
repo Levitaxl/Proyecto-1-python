@@ -6,6 +6,5 @@ class GetAllUsersController:
 
     @classmethod
     def invoke(self):
-        getAllUsersService = GetAllUsersService()
-        users = getAllUsersService.invoke()
+        users = GetAllUsersService.invoke()
         return users

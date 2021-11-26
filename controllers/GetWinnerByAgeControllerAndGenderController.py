@@ -7,12 +7,8 @@ class GetWinnerByAgeControllerAndGenderController:
 
     @classmethod
     def invoke(self):
-        getWinnerByAgeGroupService = GetWinnerByAgeGroupService()
-        winnersByAgeGroup = getWinnerByAgeGroupService.invoke()
-
-
-        getWinnerByGenderService = GetWinnerByGenderService()
-        winnersByGender = getWinnerByGenderService.invoke()
+        winnersByAgeGroup = GetWinnerByAgeGroupService.invoke()
+        winnersByGender = GetWinnerByGenderService.invoke()
         
         winners=dict()
         winners.update(winnersByAgeGroup)

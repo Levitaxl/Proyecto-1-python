@@ -6,6 +6,5 @@ class GetWinnerController:
 
     @classmethod
     def invoke(self):
-        getAllUsersService = GetWinnerService()
-        user = getAllUsersService.invoke()
+        user = GetWinnerService.invoke()
         return user

@@ -1,13 +1,13 @@
 from controllers.GetAllUsersController import GetAllUsersController
+import os
 class GetAllUsersView:
     def __init__(self):
        pass
 
     @classmethod    
     def showMenu(self):
-
-        getAllUsersController = GetAllUsersController()
-        users= getAllUsersController.invoke()
+        
+        users= GetAllUsersController.invoke()
 
         header=['CI','P.Apellido','S.Apellido','Nombre',' Inicial S.Nombre','Sexo','Edad','Horas','Minutos','Segundos']
      
@@ -19,5 +19,7 @@ class GetAllUsersView:
 
 
         input('Apriete enter para salir: ')
+        clear = lambda: os.system('cls')
+        clear()
 
         

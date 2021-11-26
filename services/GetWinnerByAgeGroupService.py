@@ -20,7 +20,6 @@ class GetWinnerByAgeGroupService:
         return (winners)
 
     def winnerJunior(self,users):
-        idWinner=-1
         winner={
             'hours' :    9999999,
             'minutes' :  9999999,
