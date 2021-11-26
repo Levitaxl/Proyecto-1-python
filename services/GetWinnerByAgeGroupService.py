@@ -7,8 +7,9 @@ class GetWinnerByAgeGroupService:
 
     @classmethod
     def invoke(self):
-        usersModel = UsersModel()
-        users =  usersModel.invoke()
+        users =  UsersModel.invoke()
+        if(users==False):
+            return False
         idWinnerJr      =   self.winnerJunior(self,users) 
         idWinnerSenior  =   self.winnerSenior(self,users) 
         idWinnerMaster  =   self.winnerMaster(self,users) 

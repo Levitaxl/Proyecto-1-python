@@ -12,6 +12,10 @@ class GetWinnerByAgeGroupView:
 
         winners= GetWinnerByAgeGroupController.invoke()
 
+        if(winners==False):
+            print('Remember to upload the file')
+            return
+
         self.printWinner(self,winners['winnerJr'],'Winner Jr')
         self.printWinner(self,winners['winnerSenior'],'Winner Senior')
         self.printWinner(self,winners['winnerMaster'],'Winner Master')

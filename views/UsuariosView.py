@@ -50,10 +50,8 @@ class UsuariosView:
     def option3():
         CountAllUsersByAgeGroupView.showMenu()
         
-
     def option4():
         CountAllUsersByGenderView.showMenu()
-        
 
     def option5():
         GetWinnerByAgeGroupView.showMenu()
