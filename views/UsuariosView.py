@@ -47,7 +47,6 @@ class UsuariosView:
     def option2():
         CountAllUsersView.showMenu()
         
-    
     def option3():
         CountAllUsersByAgeGroupView.showMenu()
         

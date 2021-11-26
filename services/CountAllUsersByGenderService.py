@@ -7,8 +7,9 @@ class CountAllUsersByGenderService:
 
     @classmethod
     def invoke(self):
-        usersModel = UsersModel()
-        users =  usersModel.invoke()
+        users =  UsersModel.invoke()
+        if(users==False):
+            return False
         qtyF =0
         qtyM =0
       

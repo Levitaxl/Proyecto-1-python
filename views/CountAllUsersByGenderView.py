@@ -7,6 +7,9 @@ class CountAllUsersByGenderView:
     @classmethod    
     def showMenu(self):
         quantity= CountAllUsersByGenderController.invoke()
+        if(quantity==False):
+            print('Remember to upload the file')
+            return
 
         females ="|Females "+str(quantity['qtyF'])+"|"
         males   ="|Males "+str(quantity['qtyM'])+"|"
