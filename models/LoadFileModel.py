@@ -11,15 +11,15 @@ class LoadFileModel:
                 data=linea.split(",")
                 diccionario={
                     'ci': data[0].strip(),
-                    'primer_apellido': data[1].strip(),
-                    'segundo_apellido': data[2].strip(),
-                    'nombre': data[3].strip(),
-                    'inicial_segundo_nombre': data[4].strip(),
-                    'sexo': data[5].strip(),
-                    'edad': data[6].strip(),
-                    'horas': data[7].strip(),
-                    'minutos': data[8].strip(),
-                    'segundos': data[9].strip(),
+                    'surname': data[1].strip(),
+                    'second_surname': data[2].strip(),
+                    'name': data[3].strip(),
+                    'middle_initial': data[4].strip(),
+                    'gender': data[5].strip(),
+                    'age': data[6].strip(),
+                    'hours': data[7].strip(),
+                    'minutes': data[8].strip(),
+                    'seconds': data[9].strip(),
                 }
                 list.append(diccionario)
         except:

@@ -15,7 +15,7 @@ class CountAllUsersByGenderService:
         qtyM =0
       
         for user in users:
-            gender=user["sexo"]
+            gender=user["gender"]
             if(gender == 'F'):
                 qtyF=qtyF+1
             elif(gender == 'M'):

@@ -25,11 +25,11 @@ class GetWinnerService:
         }
         i=0
         for user in users:
-            if((int(winner['hours']) >= int(user['horas'])) and (int(winner['minutes']) >= int(user['minutos'])) and (int(winner['seconds']) >= int(user['segundos']))):
+            if((int(winner['hours']) >= int(user['hours'])) and (int(winner['minutes']) >= int(user['minutes'])) and (int(winner['seconds']) >= int(user['seconds']))):
                 winner={
-                    'hours' :    user['horas'],
-                    'minutes' :  user['minutos'],
-                    'seconds':   user['segundos'],
+                    'hours' :    user['hours'],
+                    'minutes' :  user['minutes'],
+                    'seconds':   user['seconds'],
                     'idWinner' : i
                 }
             i=i+1

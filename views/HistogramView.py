@@ -11,7 +11,7 @@ class HistogramView:
         quantity= CountAllUsersByAgeGroupController.invoke()
         
         if(quantity==False):
-            print('Remember to upload the file')
+            print('Recuerde cargar el archivo correctamente')
             return
             
         juniors=''

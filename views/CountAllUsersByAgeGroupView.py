@@ -9,7 +9,7 @@ class CountAllUsersByAgeGroupView:
     def showMenu(self):
         usersQuantity= CountAllUsersByAgeGroupController.invoke()
         if(usersQuantity==False):
-            print('Remember to upload the file')
+            print('Recuerde cargar el archivo correctamente')
             return
 
         juniors="|Juniors:"+str(usersQuantity['qtyJuniors'])+"|"

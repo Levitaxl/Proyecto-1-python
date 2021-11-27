@@ -29,13 +29,13 @@ class GetWinnerByAgeGroupService:
         }
         i=0
         for user in users:
-            age=int(user["edad"])
+            age=int(user["age"])
             if(age<= 25):
-                if((int(winner['hours']) >= int(user['horas'])) and (int(winner['minutes']) >= int(user['minutos'])) and (int(winner['seconds']) >= int(user['segundos']))):
+                if((int(winner['hours']) >= int(user['hours'])) and (int(winner['minutes']) >= int(user['minutes'])) and (int(winner['seconds']) >= int(user['seconds']))):
                     winner={
-                        'hours' :    user['horas'],
-                        'minutes' :  user['minutos'],
-                        'seconds':   user['segundos'],
+                        'hours' :    user['hours'],
+                        'minutes' :  user['minutes'],
+                        'seconds':   user['seconds'],
                         'idWinner' : i
                     }
             i=i+1
@@ -51,13 +51,13 @@ class GetWinnerByAgeGroupService:
         }
         i=0
         for user in users:
-            age=int(user["edad"])
+            age=int(user["age"])
             if(age>25 and  age<40):
-                 if((int(winner['hours']) >= int(user['horas'])) and (int(winner['minutes']) >= int(user['minutos'])) and (int(winner['seconds']) >= int(user['segundos']))):
+                 if((int(winner['hours']) >= int(user['hours'])) and (int(winner['minutes']) >= int(user['minutes'])) and (int(winner['seconds']) >= int(user['seconds']))):
                     winner={
-                        'hours' :    user['horas'],
-                        'minutes' :  user['minutos'],
-                        'seconds':   user['segundos'],
+                        'hours' :    user['hours'],
+                        'minutes' :  user['minutes'],
+                        'seconds':   user['seconds'],
                         'idWinner' : i
                     }
             i=i+1
@@ -73,13 +73,13 @@ class GetWinnerByAgeGroupService:
         }
         i=0
         for user in users:
-            age=int(user["edad"])
+            age=int(user["age"])
             if(age>=40):
-                if((int(winner['hours']) >= int(user['horas'])) and (int(winner['minutes']) >= int(user['minutos'])) and (int(winner['seconds']) >= int(user['segundos']))):
+                if((int(winner['hours']) >= int(user['hours'])) and (int(winner['minutes']) >= int(user['minutes'])) and (int(winner['seconds']) >= int(user['seconds']))):
                     winner={
-                        'hours' :    user['horas'],
-                        'minutes' :  user['minutos'],
-                        'seconds':   user['segundos'],
+                        'hours' :    user['hours'],
+                        'minutes' :  user['minutes'],
+                        'seconds':   user['seconds'],
                         'idWinner' : i
                     }
             i=i+1

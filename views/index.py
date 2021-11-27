@@ -38,7 +38,7 @@ class IndexView:
             try:
                 option = int(input('Enter your choice: '))
             except:
-                print('Wrong input. Please enter a number ...')
+                print('Ingrese un numero ...')
             #Check what choice was entered and act accordingly
             if option == 1:
                self.option1()
@@ -48,4 +48,4 @@ class IndexView:
                 print('Thanks message before exiting')
                 exit()
             else:
-                print('Invalid option. Please enter a number between 1 and 4.')
+                print('Opcion Invalida. ')

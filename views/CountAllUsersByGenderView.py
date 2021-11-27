@@ -9,7 +9,7 @@ class CountAllUsersByGenderView:
     def showMenu(self):
         quantity= CountAllUsersByGenderController.invoke()
         if(quantity==False):
-            print('Remember to upload the file')
+            print('Recuerde cargar el archivo correctamente')
             return
 
         females ="|Females "+str(quantity['qtyF'])+"|"

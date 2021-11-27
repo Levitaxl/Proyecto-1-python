@@ -12,7 +12,7 @@ class CountAllUsersView:
         quantity= CountAllUsersController.invoke()
 
         if(quantity==False):
-            print('Remember to upload the file')
+            print('Recuerde cargar el archivo correctamente')
             return
         
         quantity= str(CountAllUsersController.invoke())

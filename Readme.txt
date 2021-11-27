@@ -18,4 +18,4 @@ Manejo de excepciones
         Las excepciones de las vistas:
             Estas ocurren al seleccionar mal un valor, como por ejemplos, cuando se pide un numero, y se ingresa una letra.
 
-Todas las funciones tienen solo un metodo publico y un nombre autoexplicativo, facilitando la legibilidad del codigo al cumplir la S de los principios SOLID.
+Todas las funciones tienen solo un metodo publico y un name autoexplicativo, facilitando la legibilidad del codigo al cumplir la S de los principios SOLID.

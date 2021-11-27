@@ -1,6 +1,6 @@
 from controllers.AddANewRouteController import AddANewRouteController
 import views.index
-import os
+from os import path
 
 
 #Vista del menu de archivos
@@ -24,7 +24,9 @@ class ArchivoView:
  
     def option1():
         addANewRouteController = AddANewRouteController()
-        route= "C:/Users/herme/Desktop/Proyecto_python_1/competencia.txt"
+
+        file_name="competencia.txt"
+        route=path.abspath(file_name)
         isANewRoute = addANewRouteController.invoke(route)
         if(isANewRoute):
             print('Se cargo la ruta exitosamente')
@@ -44,11 +46,11 @@ class ArchivoView:
             try:
                 option = int(input('Enter your choice: '))
             except:
-                print('Wrong input. Please enter a number ...')
+                print('Ingrese un numero ...')
             #Check what choice was entered and act accordingly
             if option == 1:
                self.option1()
             elif option == 2:
                 self.option2()
             else:
-                print('Invalid option. Please enter a number between 1 and 4.')
+                print('Opcion Invalida. ')

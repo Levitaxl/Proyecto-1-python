@@ -12,7 +12,7 @@ class GetWinnerByAgeControllerAndGenderView:
         winners= GetWinnerByAgeControllerAndGenderController.invoke()
 
         if(winners==False):
-            print('Remember to upload the file')
+            print('Recuerde cargar el archivo correctamente')
             return
 
         self.printWinner(self,winners['winnerJr'],'Winner Jr')
@@ -27,13 +27,13 @@ class GetWinnerByAgeControllerAndGenderView:
         print('---------------------------------------------')
         print('|'+header)
         print('|CI               | '+winner['ci'])
-        print('|P.Apellido       | '+winner['primer_apellido'])
-        print('|S.Apellido       | '+winner['segundo_apellido'])
-        print('|Nombre           | '+winner['nombre'])
-        print('|Inicial S.Nombre | '+winner['inicial_segundo_nombre'])
-        print('|Sexo             | '+winner['sexo'])
-        print('|Edad             | '+winner['edad'])
-        print('|Horas            | '+winner['horas'])
-        print('|Minutos          | '+winner['minutos'])
-        print('|Segundos         | '+winner['segundos'])
+        print('|P.Apellido       | '+winner['surname'])
+        print('|S.Apellido       | '+winner['second_surname'])
+        print('|Nombre           | '+winner['name'])
+        print('|Inicial S.Nombre | '+winner['middle_initial'])
+        print('|Sexo             | '+winner['gender'])
+        print('|Edad             | '+winner['age'])
+        print('|Horas            | '+winner['hours'])
+        print('|Minutos          | '+winner['minutes'])
+        print('|Segundos         | '+winner['seconds'])
         print('---------------------------------------------')

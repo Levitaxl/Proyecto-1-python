@@ -16,7 +16,7 @@ class CountAllUsersByAgeGroupService:
         
       
         for user in users:
-            age=int(user["edad"])
+            age=int(user["age"])
             if(age<= 25):
                 qtyJuniors=qtyJuniors+1
             elif(age>25 and  age<40):

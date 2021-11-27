@@ -19,10 +19,10 @@ class UsuariosView:
             1: 'Lista con la totalidad de participantes',
             2: 'Cantidad total de participantes',
             3: 'Cantidad de participantes por grupo etario ',
-            4: 'Cantidad de participantes por sexo',
+            4: 'Cantidad de participantes por gender',
             5: 'Ganadores por grupo etario',
-            6: 'Ganadores por sexo',
-            7: 'Ganadores por grupo etario y sexo',
+            6: 'Ganadores por gender',
+            7: 'Ganadores por grupo etario y gender',
             8: 'Ganador genera',
             9: 'Histograma de participante por grupo etario',
             0: 'salir'
@@ -81,7 +81,7 @@ class UsuariosView:
             try:
                 option = int(input('Enter your choice: '))
             except:
-                print('Wrong input. Please enter a number ...')
+                print('Ingrese un numero ...')
             #Check what choice was entered and act accordingly
             if option == 1:
                self.option1()
@@ -104,7 +104,7 @@ class UsuariosView:
             elif option == 0:
                 self.option0()
             else:
-                print('Invalid option. Please enter a number between 1 and 4.')
+                print('Opcion Invalida. ')
 
     def clear_console():
         if platform.system()=='Windows':
