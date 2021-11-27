@@ -15,11 +15,12 @@ class GetWinnerByAgeControllerAndGenderView:
             print('Recuerde cargar el archivo correctamente')
             return
 
-        self.printWinner(self,winners['winnerJr'],'Winner Jr')
-        self.printWinner(self,winners['winnerSenior'],'Winner Senior')
-        self.printWinner(self,winners['winnerMaster'],'Winner Master')
-        self.printWinner(self,winners['winnerF'],'Female Winner')
-        self.printWinner(self,winners['winnerM'],'Male Winner')
+        self.printWinner(self,winners['winnerJrF'],'Winner Jr F')
+        self.printWinner(self,winners['winnerSeniorF'],'Winner Senior F')
+        self.printWinner(self,winners['winnerMasterF'],'Winner Master F')
+        self.printWinner(self,winners['winnerJrM'],'Female Winner M')
+        self.printWinner(self,winners['winnerSeniorM'],'Male Winner M')
+        self.printWinner(self,winners['winnerMasterM'],'Male Winner M')
 
         input('Press enter on the keyboard to exit: ')
         
